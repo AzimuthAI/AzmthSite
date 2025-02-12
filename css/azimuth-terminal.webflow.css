@@ -635,7 +635,14 @@
 
 .window-wrapper-ip {
   z-index: 1;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 0;
+  display: flex;
   position: absolute;
+  inset: 50%;
 }
 
 .window-ip {
@@ -643,7 +650,7 @@
   background-color: #c7c7c7;
   border-radius: 8px;
   flex-flow: column;
-  width: auto;
+  width: 320px;
   min-width: 320px;
   max-width: 320px;
   height: auto;
@@ -672,6 +679,63 @@
   box-shadow: 0 2px 12px #00000052;
 }
 
+.text-link-2-green {
+  opacity: 1;
+  pointer-events: auto;
+  color: #68e377;
+  text-align: left;
+  mix-blend-mode: normal;
+  font-family: Roboto Mono, sans-serif;
+  font-size: 12px;
+  position: static;
+}
+
+.window-wrapper-campaign {
+  z-index: 1;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 0;
+  margin-top: 10%;
+  margin-bottom: 0%;
+  margin-right: 10%;
+  padding: 0%;
+  display: flex;
+  position: absolute;
+  inset: 0% 0% auto auto;
+}
+
+.pop-up-campaign {
+  z-index: 3;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: #fff;
+  border-radius: 10px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  display: flex;
+  position: static;
+  inset: auto 20% 20% auto;
+}
+
+.code-embed {
+  width: 94%;
+  padding-left: 0;
+}
+
+.div-block-6 {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+}
+
 @media screen and (max-width: 991px) {
   .window-details {
     left: 10%;
@@ -683,6 +747,10 @@
 
   .window-error, .window-contact-details, .window-ip, .window-readme {
     left: 10%;
+  }
+
+  .pop-up-campaign {
+    right: 10%;
   }
 }
 
@@ -755,6 +823,10 @@
     max-height: 540px;
   }
 
+  .window-wrapper-ip {
+    width: auto;
+  }
+
   .window-ip, .window-readme {
     width: 90vw;
     min-width: 380px;
@@ -762,6 +834,11 @@
     max-height: 540px;
     top: 10%;
     left: 5%;
+  }
+
+  .pop-up-campaign {
+    bottom: 10%;
+    right: 5%;
   }
 }
 
@@ -841,6 +918,17 @@
     min-width: 0;
     top: 5%;
     left: 5%;
+  }
+
+  .window-wrapper-campaign {
+    margin-right: 2%;
+    position: absolute;
+  }
+
+  .pop-up-campaign {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
   }
 }
 
