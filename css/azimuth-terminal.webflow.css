@@ -273,10 +273,19 @@ h1 {
 }
 
 .product-item {
+  position: relative;
   min-height: 246px;
   padding-left: 52px;
-  border-left: 2px solid rgba(255, 255, 255, 0.72);
-  box-shadow: inset 2px 0 0 var(--green);
+}
+
+.product-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 175px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.72) 0 1px, var(--green) 1px 2px);
 }
 
 .product-item h3 {
@@ -538,6 +547,10 @@ h1 {
   .product-item {
     min-height: 0;
     padding-left: 28px;
+  }
+
+  .product-item::before {
+    height: 175px;
   }
 
   .outline-button {
