@@ -210,8 +210,8 @@ h1 {
 
 .hero-mark {
   position: absolute;
-  left: var(--page-pad);
-  bottom: clamp(78px, 10vh, 136px);
+  right: clamp(120px, 22vw, 420px);
+  bottom: clamp(118px, 17vh, 190px);
   width: clamp(70px, 7vw, 130px);
   background: url("../assets/azmth/video-icon-poster.png") center / contain no-repeat;
 }
@@ -224,9 +224,9 @@ h1 {
 .statement-section {
   display: flex;
   justify-content: center;
-  min-height: 66vh;
+  min-height: 48vh;
   padding-top: 118px;
-  padding-bottom: 118px;
+  padding-bottom: 70px;
 }
 
 .statement-copy {
@@ -246,7 +246,7 @@ h1 {
 
 .products-section {
   min-height: 100vh;
-  padding-top: 138px;
+  padding-top: 82px;
   padding-bottom: 128px;
 }
 
@@ -330,7 +330,7 @@ h1 {
   min-height: 56vh;
   padding-top: 118px;
   padding-bottom: 126px;
-  background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.64) 43%, rgba(1, 13, 5, 0.42) 100%), url("../assets/azmth/footer-gradient.png");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.08) 100%), url("../assets/azmth/footer-gradient.png");
   background-position: center;
   background-size: cover;
 }
@@ -505,7 +505,7 @@ h1 {
   }
 
   .hero-mark {
-    left: var(--page-pad);
+    right: var(--page-pad);
     bottom: 64px;
     width: 84px;
   }
@@ -516,6 +516,14 @@ h1 {
     min-height: auto;
     padding-top: 88px;
     padding-bottom: 88px;
+  }
+
+  .statement-section {
+    padding-bottom: 54px;
+  }
+
+  .products-section {
+    padding-top: 54px;
   }
 
   .statement-copy {
