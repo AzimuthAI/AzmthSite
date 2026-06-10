@@ -92,7 +92,8 @@ video {
   align-items: center;
   gap: clamp(34px, 5.1vw, 92px);
   color: var(--muted);
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 1.1;
 }
 
@@ -140,6 +141,12 @@ main {
   padding-right: var(--page-pad);
 }
 
+.statement-section,
+.products-section,
+.contact-section {
+  scroll-margin-top: 126px;
+}
+
 .hero-section {
   position: relative;
   display: flex;
@@ -162,10 +169,14 @@ h3 {
   letter-spacing: 0;
 }
 
+.copy-line {
+  display: block;
+}
+
 h1 {
-  max-width: 1110px;
-  font-size: clamp(38px, 3.35vw, 64px);
-  line-height: 1.25;
+  max-width: 1030px;
+  font-size: 36px;
+  line-height: 1.34;
 }
 
 .hero-copy p,
@@ -174,7 +185,8 @@ h1 {
 .product-item p {
   margin: 0;
   color: var(--muted);
-  font-size: clamp(18px, 1.35vw, 26px);
+  font-size: 18px;
+  font-weight: 300;
   line-height: 1.55;
 }
 
@@ -198,7 +210,7 @@ h1 {
 
 .hero-mark {
   position: absolute;
-  right: clamp(56px, 9vw, 178px);
+  left: var(--page-pad);
   bottom: clamp(78px, 10vh, 136px);
   width: clamp(70px, 7vw, 130px);
   background: url("../assets/azmth/video-icon-poster.png") center / contain no-repeat;
@@ -211,25 +223,25 @@ h1 {
 
 .statement-section {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   min-height: 66vh;
-  padding-top: 104px;
+  padding-top: 118px;
   padding-bottom: 118px;
 }
 
 .statement-copy {
   width: min(1070px, 75vw);
+  text-align: right;
 }
 
 .statement-copy h2 {
-  max-width: 940px;
-  margin-top: 46px;
-  font-size: clamp(34px, 3.1vw, 58px);
-  line-height: 1.22;
+  max-width: none;
+  font-size: 36px;
+  line-height: 1.34;
 }
 
-.statement-copy .outline-button {
-  margin-top: 44px;
+.statement-copy p {
+  margin-top: 34px;
 }
 
 .products-section {
@@ -244,8 +256,8 @@ h1 {
 
 .section-intro h2 {
   max-width: 1030px;
-  font-size: clamp(36px, 3.1vw, 60px);
-  line-height: 1.22;
+  font-size: 36px;
+  line-height: 1.34;
 }
 
 .section-intro p {
@@ -268,31 +280,33 @@ h1 {
 }
 
 .product-item h3 {
-  font-size: clamp(26px, 2vw, 38px);
-  line-height: 1.1;
+  font-size: 20px;
+  line-height: 1.35;
   text-transform: uppercase;
 }
 
 .product-item p {
   max-width: 630px;
   margin-top: 16px;
-  font-size: clamp(17px, 1.25vw, 24px);
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .outline-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 278px;
-  min-height: 66px;
+  width: 198px;
+  height: 47px;
   margin-top: 48px;
-  padding: 14px 34px;
+  padding: 0 18px;
   border: 1px solid var(--green);
   border-radius: 8px;
   color: #ffffff;
   background: rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 0 1px rgba(70, 140, 78, 0.1), 0 0 22px rgba(70, 140, 78, 0);
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 1;
   transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
 }
@@ -310,64 +324,77 @@ h1 {
 
 .contact-section {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 56vh;
-  padding-top: 130px;
-  padding-bottom: 118px;
-  background-image: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.7) 44%, rgba(0, 0, 0, 0.05) 100%), url("../assets/azmth/footer-gradient.png");
+  padding-top: 118px;
+  padding-bottom: 126px;
+  background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.64) 43%, rgba(1, 13, 5, 0.42) 100%), url("../assets/azmth/footer-gradient.png");
   background-position: center;
   background-size: cover;
 }
 
 .contact-inner {
-  width: min(880px, 70vw);
+  width: min(1160px, 84vw);
+  text-align: center;
 }
 
 .contact-section h2 {
-  font-size: clamp(34px, 3vw, 58px);
-  line-height: 1.24;
+  font-size: 36px;
+  line-height: 1.34;
+}
+
+.contact-section .outline-button {
+  margin-top: 46px;
 }
 
 .site-footer {
   display: grid;
-  grid-template-columns: minmax(160px, 1fr) minmax(180px, 0.7fr) minmax(270px, 0.7fr);
-  gap: clamp(36px, 7vw, 130px);
-  padding-top: 86px;
-  padding-bottom: 78px;
+  grid-template-columns: minmax(160px, 1fr) minmax(180px, 0.7fr) minmax(300px, 0.72fr);
+  gap: clamp(40px, 10vw, 230px);
+  min-height: 420px;
+  padding-top: 88px;
+  padding-bottom: 82px;
   color: var(--muted);
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 1.25;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.site-footer > a {
-  align-self: start;
-}
-
-.site-footer > a:nth-child(3),
-.site-footer > a:nth-child(4),
-.site-footer > a:nth-child(5) {
-  grid-column: 2;
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 92px;
 }
 
 .footer-brand {
-  grid-column: 3;
-  grid-row: 1 / span 5;
+  justify-self: end;
 }
 
 .footer-brand > img {
-  width: clamp(200px, 16vw, 286px);
+  width: 200.7px;
+  height: 48px;
+  object-fit: contain;
 }
 
 .social-links {
   display: flex;
-  gap: 28px;
-  margin-top: 46px;
+  gap: 34px;
+  margin-top: 74px;
 }
 
 .social-links a {
-  width: 45px;
-  height: 45px;
+  width: 38px;
+  height: 38px;
   transition: transform 180ms ease, opacity 180ms ease;
+}
+
+.social-links img {
+  width: 100%;
+  height: 100%;
 }
 
 .social-links a:hover {
@@ -375,8 +402,9 @@ h1 {
 }
 
 .footer-brand p {
-  margin: 70px 0 0;
-  font-size: 18px;
+  margin: 90px 0 0;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 @media (max-width: 1024px) {
@@ -439,17 +467,32 @@ h1 {
     padding-bottom: 70px;
   }
 
-  h1 {
-    font-size: clamp(34px, 10vw, 50px);
-    line-height: 1.16;
+  .copy-line {
+    display: inline;
+  }
+
+  .copy-line + .copy-line::before {
+    content: " ";
+  }
+
+  h1,
+  .statement-copy h2,
+  .section-intro h2,
+  .contact-section h2 {
+    font-size: clamp(28px, 8.6vw, 36px);
+    line-height: 1.25;
   }
 
   .hero-copy p,
   .statement-copy p,
-  .section-intro p,
-  .product-item p {
+  .section-intro p {
     font-size: 18px;
     line-height: 1.48;
+  }
+
+  .product-item p {
+    font-size: 16px;
+    line-height: 1.6;
   }
 
   .partner-logos {
@@ -462,7 +505,7 @@ h1 {
   }
 
   .hero-mark {
-    right: var(--page-pad);
+    left: var(--page-pad);
     bottom: 64px;
     width: 84px;
   }
@@ -475,10 +518,8 @@ h1 {
     padding-bottom: 88px;
   }
 
-  .statement-copy h2,
-  .section-intro h2,
-  .contact-section h2 {
-    font-size: clamp(30px, 8vw, 42px);
+  .statement-copy {
+    text-align: right;
   }
 
   .product-grid {
@@ -492,9 +533,8 @@ h1 {
   }
 
   .outline-button {
-    min-width: 0;
-    width: min(278px, 100%);
-    min-height: 58px;
+    width: 198px;
+    height: 47px;
     margin-top: 34px;
   }
 
@@ -505,15 +545,16 @@ h1 {
   .site-footer {
     grid-template-columns: 1fr;
     gap: 22px;
+    min-height: 0;
     padding-top: 64px;
   }
 
-  .site-footer > a:nth-child(3),
-  .site-footer > a:nth-child(4),
-  .site-footer > a:nth-child(5),
+  .footer-column {
+    gap: 22px;
+  }
+
   .footer-brand {
-    grid-column: auto;
-    grid-row: auto;
+    justify-self: start;
   }
 
   .footer-brand {
