@@ -210,14 +210,15 @@ h1 {
 
 .hero-mark {
   position: absolute;
-  right: clamp(72px, 16vw, 300px);
-  bottom: clamp(118px, 17vh, 190px);
-  width: clamp(104px, 9vw, 168px);
+  top: 532px;
+  right: clamp(72px, 10.5vw, 180px);
+  width: 159px;
+  height: 159px;
 }
 
 .hero-mark video {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
   mix-blend-mode: screen;
 }
@@ -515,9 +516,10 @@ h1 {
   }
 
   .hero-mark {
+    top: 532px;
     right: clamp(10px, 2.4vw, 18px);
-    bottom: 64px;
-    width: clamp(118px, 22vw, 150px);
+    width: clamp(132px, 25vw, 159px);
+    height: clamp(132px, 25vw, 159px);
   }
 
   .statement-section,
@@ -589,5 +591,11 @@ h1 {
 
   .footer-brand p {
     margin-top: 42px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-mark {
+    top: 620px;
   }
 }
