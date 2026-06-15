@@ -210,9 +210,9 @@ h1 {
 
 .hero-mark {
   position: absolute;
-  right: clamp(120px, 22vw, 420px);
+  right: clamp(72px, 16vw, 300px);
   bottom: clamp(118px, 17vh, 190px);
-  width: clamp(70px, 7vw, 130px);
+  width: clamp(104px, 9vw, 168px);
 }
 
 .hero-mark video {
@@ -515,9 +515,9 @@ h1 {
   }
 
   .hero-mark {
-    right: var(--page-pad);
+    right: clamp(10px, 2.4vw, 18px);
     bottom: 64px;
-    width: 84px;
+    width: clamp(118px, 22vw, 150px);
   }
 
   .statement-section,
