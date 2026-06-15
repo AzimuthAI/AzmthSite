@@ -213,11 +213,12 @@ h1 {
   right: clamp(120px, 22vw, 420px);
   bottom: clamp(118px, 17vh, 190px);
   width: clamp(70px, 7vw, 130px);
-  background: url("../assets/azmth/video-icon-poster.png") center / contain no-repeat;
 }
 
 .hero-mark video {
   width: 100%;
+  height: auto;
+  object-fit: contain;
   mix-blend-mode: screen;
 }
 
