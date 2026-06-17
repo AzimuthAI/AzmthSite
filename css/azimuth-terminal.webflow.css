@@ -418,6 +418,66 @@ h1 {
   font-weight: 300;
 }
 
+.privacy-dialog {
+  position: fixed;
+  z-index: 40;
+  inset: 0;
+  display: none;
+  place-items: center;
+  width: 100%;
+  padding: 24px;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.privacy-dialog:target {
+  display: grid;
+}
+
+.privacy-dialog-inner {
+  position: relative;
+  width: min(620px, calc(100vw - 48px));
+  padding: 38px;
+  border: 1px solid var(--green);
+  border-radius: 8px;
+  background: #050705;
+}
+
+.privacy-dialog h2 {
+  font-size: 28px;
+  line-height: 1.25;
+}
+
+.privacy-dialog p {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.privacy-dialog a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.privacy-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(70, 140, 78, 0.75);
+  border-radius: 8px;
+  color: #ffffff;
+  background: transparent;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media (max-width: 1024px) {
   .site-header {
     padding-top: 38px;

@@ -32,7 +32,7 @@
       <a href="#about">About</a>
       <a href="https://azmth.gitbook.io/azmth-terminal" target="_blank" rel="noreferrer">Docs</a>
       <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
+      <a href="mailto:noone@azmth.ai">Contact</a>
     </nav>
   </header>
 
@@ -90,21 +90,30 @@
       <a href="#about">About</a>
     </nav>
     <nav class="footer-column footer-column-links" aria-label="Footer secondary">
-      <a href="/privacy-policy">Privacy Policy</a>
+      <a class="privacy-trigger" href="#privacy-policy">Privacy Policy</a>
       <a href="#products">Product</a>
       <a href="https://azmth.gitbook.io/azmth-terminal" target="_blank" rel="noreferrer">Docs</a>
-      <a href="#contact">Contact</a>
+      <a href="mailto:noone@azmth.ai">Contact</a>
     </nav>
     <div class="footer-brand">
       <img src="assets/azmth/azmth-logo.png" alt="Azmth">
       <div class="social-links" aria-label="Social links">
-        <a href="https://www.linkedin.com/company/azmth" target="_blank" rel="noreferrer" aria-label="LinkedIn"><img src="assets/azmth/linkedin-icon.png" alt=""></a>
-        <a href="https://x.com/azmth" target="_blank" rel="noreferrer" aria-label="X"><img src="assets/azmth/x-icon.png" alt=""></a>
-        <a href="https://www.youtube.com/@azmth" target="_blank" rel="noreferrer" aria-label="YouTube"><img src="assets/azmth/youtube-icon.png" alt=""></a>
+        <a href="https://www.linkedin.com/company/azmuth-terminal/posts/?feedView=all" target="_blank" rel="noreferrer" aria-label="LinkedIn"><img src="assets/azmth/linkedin-icon.png" alt=""></a>
+        <a href="https://x.com/azmth_ai" target="_blank" rel="noreferrer" aria-label="X"><img src="assets/azmth/x-icon.png" alt=""></a>
       </div>
-      <p>&copy; 2026 Azmth Pte Ltd.</p>
+      <p>&copy; 2026 Azmth Terminal Pte. Ltd</p>
     </div>
   </footer>
+
+  <div id="privacy-policy" class="privacy-dialog" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
+    <div class="privacy-dialog-inner">
+      <a class="privacy-close" href="#" aria-label="Close privacy policy">&times;</a>
+      <h2 id="privacy-title">Privacy Policy</h2>
+      <p>Azmth Terminal Pte. Ltd respects your privacy. This site collects only the information needed to operate the website, respond to enquiries, and improve our services.</p>
+      <p>If you contact us by email, we use your email address and message only to reply to your request. We do not sell personal information.</p>
+      <p>For privacy questions, contact <a href="mailto:noone@azmth.ai">noone@azmth.ai</a>.</p>
+    </div>
+  </div>
 
   <script>
     const toggle = document.querySelector('.nav-toggle');
@@ -122,6 +131,7 @@
         nav.classList.remove('is-open');
       }
     });
+
   </script>
 </body>
 </html>
