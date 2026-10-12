@@ -767,3 +767,24 @@ h1 {
   .about-team { padding-top: 64px; padding-bottom: 64px; }
   .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 20px; }
 }
+
+.privacy-policy-panel {
+  width: min(820px, calc(100vw - 48px));
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.privacy-policy-panel h3 {
+  margin: 28px 0 0;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.privacy-policy-panel .policy-date { margin-top: 10px; font-size: 14px; }
+.privacy-policy-panel .privacy-close { position: sticky; top: 0; float: right; margin-left: 16px; background: #050705; }
+
+@media (max-width: 760px) {
+  .privacy-policy-panel { padding: 24px; }
+  .privacy-policy-panel h3 { font-size: 18px; }
+}
