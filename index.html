@@ -14,7 +14,7 @@
   <link rel="preload" href="fonts/saira/Saira-Light.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/webflow.css">
-  <link rel="stylesheet" href="css/azimuth-terminal.webflow.css">
+  <link rel="stylesheet" href="css/azimuth-terminal.webflow.css?v=logo-carousel-1">
   <link rel="icon" href="images/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="images/webclip.png">
 </head>
@@ -28,74 +28,137 @@
       <span></span>
     </button>
     <nav class="site-nav" aria-label="Main">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
-      <a href="mailto:noone@azmth.ai">Contact</a>
+      <a href="aboutUs.html">About Us</a>
+      <a href="mikoshi.html">Mikoshi</a>
+      <a href="https://projektanimas.azmth.ai/" target="_blank" rel="noopener noreferrer">Animas</a>
+      <a class="outline-button nav-access" href="https://forms.gle/Czc9RVbQYBpj58UT9" target="_blank" rel="noopener noreferrer">Early Access</a>
     </nav>
   </header>
 
   <main id="home">
     <section class="hero-section" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <h1 id="hero-title"><span class="copy-line">Building The Next Generation</span><span class="copy-line">Market Intelligence Layer.</span></h1>
-        <p><span class="copy-line">Azmth builds systematic and intelligent infrastructure for digital markets to</span><span class="copy-line">analyse and respond to a rapidly evolving microstructure enabled by artificial</span><span class="copy-line">intelligence and the rise of quantum computing.</span></p>
-      </div>
-      <div class="hero-mark" aria-hidden="true">
-        <video src="assets/azmth/video-icon-loop.mp4" autoplay muted loop playsinline preload="auto"></video>
+        <h1 id="hero-title"><span class="copy-line">Quantum Capable Trading</span><span class="copy-line">In The Age Of Predictive Alpha.</span></h1>
+        <p>Azmth builds next generation trading infrastructure for a rapidly evolving<br class="desktop-break"> microstructure enabled by artificial intelligence and quantum computing.</p>
+        <div class="hero-actions">
+          <a class="outline-button" href="mikoshi.html">Mikoshi</a>
+          <a class="outline-button" href="https://forms.gle/Czc9RVbQYBpj58UT9" target="_blank" rel="noopener noreferrer">Early Access</a>
+        </div>
       </div>
     </section>
 
     <section id="about" class="statement-section" aria-labelledby="about-title">
       <div class="statement-copy">
-        <h2 id="about-title"><span class="copy-line">For A World Disrupted, The</span><span class="copy-line">Alpha Is Non-Linear.</span></h2>
-        <p><span class="copy-line">In a fragmented market that&rsquo;s undergoing change, the lifecycle of</span><span class="copy-line">the traditional alpha is heavily compressed to near zero. We&rsquo;re</span><span class="copy-line">creating AI tools to evaluate and optimize probabilistic models.</span></p>
+        <h2 id="about-title"><span class="copy-line">We&rsquo;re Creating The Next Evolution</span><span class="copy-line">Of Portfolio Optimization &amp; Execution.</span></h2>
+        <p>Real world executions rely on heavily optimised heuristics to determine the alpha,<br class="desktop-break"> experiencing constraints that cause classical algorithms in legacy compute systems to choke;</p>
+      </div>
+      <div class="challenge-grid">
+        <article class="challenge-card">
+          <span class="challenge-number">01</span>
+          <h3>Alpha Compromise</h3>
+          <p>Classical math heavily optimises alpha calculation creating losses of up to 200bps annually.</p>
+        </article>
+        <article class="challenge-card">
+          <span class="challenge-number">02</span>
+          <h3>Overfitting Strategies</h3>
+          <p>90% of strategies degrade, due to bloated compute pipelines, overfitting, &amp; market dynamics</p>
+        </article>
+        <article class="challenge-card">
+          <span class="challenge-number">03</span>
+          <h3>Constraints = Noise</h3>
+          <p>Optimisation solvers create 20x more noise because of complex constraints, degradation &amp; scaling tolerance limits.</p>
+        </article>
       </div>
     </section>
 
-    <section id="products" class="products-section" aria-labelledby="products-title">
-      <div class="section-intro">
-        <h2 id="products-title"><span class="copy-line">The Machinations Driving</span><span class="copy-line">Intelligent Capital Design.</span></h2>
-        <p><span class="copy-line">As the core infrastructure layer behind a new class of market intelligent</span><span class="copy-line">products. Think of us as the kitchen where strategies are designed,</span><span class="copy-line">tested, and deployed across different market segments.</span></p>
+    <section id="impact" class="impact-section" aria-labelledby="impact-title">
+      <h2 id="impact-title"><span class="copy-line">Unlocking $40B Worth Of Economic Value Annually</span><span class="copy-line">Caused By Computational Inefficiencies.</span></h2>
+      <p>We&rsquo;re defining new frameworks for core capital allocations, capturing lost value from alpha<br class="desktop-break"> leakages created by classical compute capabilities.</p>
+      <p class="impact-note">The true impact of quantum technologies are only just the tip of the iceberg:</p>
+      <div class="metrics-grid">
+        <div class="metric"><span class="metric-value">~$600B</span><p>Total value created across<br> BFSI sectors by 2035</p></div>
+        <div class="metric"><span class="metric-value">$40B</span><p>Annually reclaimed from<br> computational inefficiencies</p></div>
+        <div class="metric"><span class="metric-value">~$250M</span><p>Immediate market size for<br> licensing of quantum trading stack</p></div>
       </div>
-      <div class="product-grid">
-        <article class="product-item">
-          <h3>Animas</h3>
-          <p>Programmable lightweight co-pilot system for signals, critical decisioning, self-learning strategies in real time.</p>
-        </article>
-        <article class="product-item">
-          <h3>Mikoshi Foresight</h3>
-          <p>Institutional grade engine with a full stack AI enabled research &amp; deployment framework.</p>
-        </article>
+    </section>
+
+    <section class="logo-section" aria-label="Technology ecosystem">
+      <div class="logo-carousel">
+        <div class="logo-track">
+      <div class="logo-strip">
+        <img src="assets/azmth/aws-logo.svg" alt="AWS">
+        <span class="logo-placeholder">CoinMarketCap</span>
+        <img src="assets/azmth/cointelegraph-logo.svg" alt="Cointelegraph">
+        <img src="assets/azmth/elevenlabs-logo.png" alt="ElevenLabs">
+        <img src="assets/azmth/hyperliquid-logo.svg" alt="Hyperliquid">
+        <img src="assets/azmth/injective-logo.svg" alt="Injective">
+        <img class="nvidia-logo" src="assets/azmth/nvidia-logo.png" alt="NVIDIA Inception Program">
+        <img src="assets/azmth/polymarket-logo.svg" alt="Polymarket">
+      </div>
+      <div class="logo-strip" aria-hidden="true">
+        <img src="assets/azmth/aws-logo.svg" alt="AWS">
+        <span class="logo-placeholder">CoinMarketCap</span>
+        <img src="assets/azmth/cointelegraph-logo.svg" alt="Cointelegraph">
+        <img src="assets/azmth/elevenlabs-logo.png" alt="ElevenLabs">
+        <img src="assets/azmth/hyperliquid-logo.svg" alt="Hyperliquid">
+        <img src="assets/azmth/injective-logo.svg" alt="Injective">
+        <img class="nvidia-logo" src="assets/azmth/nvidia-logo.png" alt="NVIDIA Inception Program">
+        <img src="assets/azmth/polymarket-logo.svg" alt="Polymarket">
+      </div>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="contact-section" aria-labelledby="contact-title">
       <div class="contact-inner">
-        <h2 id="contact-title"><span class="copy-line">Interested To Build The Future</span><span class="copy-line">Of Market Intelligence With Us?</span></h2>
-        <a class="outline-button" href="mailto:noone@azmth.ai">Contact Us <span aria-hidden="true">&rarr;</span></a>
+        <h2 id="contact-title">Queue Up For A Test Drive Today</h2>
+        <a class="outline-button" href="https://forms.gle/Czc9RVbQYBpj58UT9" target="_blank" rel="noopener noreferrer">Early Access</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <nav class="footer-column footer-column-primary" aria-label="Footer primary">
-      <a class="privacy-trigger" href="#privacy-policy">Privacy Policy</a>
-    </nav>
-    <nav class="footer-column footer-column-links" aria-label="Footer secondary">
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
-      <a href="mailto:noone@azmth.ai">Contact</a>
-    </nav>
     <div class="footer-brand">
-      <img src="assets/azmth/azmth-logo.png" alt="Azmth">
+      <a href="#home" aria-label="Azmth home"><img src="assets/azmth/azmth-logo.png" alt="Azmth"></a>
+      <p class="footer-tagline">Systematic Intelligent Infrastructure For Digital Markets.</p>
+      <p class="footer-copyright">&copy; 2026 Azmth Terminal Pte. Ltd</p>
+    </div>
+    <nav class="footer-column" aria-label="Learn">
+      <h3>Learn</h3>
+      <a href="aboutUs.html">About</a>
+      <a href="mikoshi.html">Mikoshi</a>
+    </nav>
+    <nav class="footer-column" aria-label="Legal">
+      <h3>Legal</h3>
+      <a href="#privacy-policy">Privacy Policy</a>
+      <a href="#terms-of-service">Terms Of Service</a>
+    </nav>
+    <div class="footer-column">
+      <h3>Find Us</h3>
       <div class="social-links" aria-label="Social links">
         <a href="https://www.linkedin.com/company/azmuth-terminal/posts/?feedView=all" target="_blank" rel="noreferrer" aria-label="LinkedIn"><img src="assets/azmth/linkedin-icon.png" alt=""></a>
         <a href="https://x.com/azmth_ai" target="_blank" rel="noreferrer" aria-label="X"><img src="assets/azmth/x-icon.png" alt=""></a>
       </div>
-      <p>&copy; 2026 Azmth Terminal Pte. Ltd</p>
     </div>
   </footer>
+
+  <div id="animas" class="privacy-dialog" role="dialog" aria-modal="true" aria-labelledby="animas-title">
+    <div class="privacy-dialog-inner">
+      <a class="privacy-close" href="#home" aria-label="Close Animas details">&times;</a>
+      <h2 id="animas-title">Animas</h2>
+      <p>Programmable lightweight co-pilot system for signals, critical decisioning, self-learning strategies in real time.</p>
+      <p><a href="https://forms.gle/Czc9RVbQYBpj58UT9" target="_blank" rel="noopener noreferrer">Request Early Access &rarr;</a></p>
+    </div>
+  </div>
+
+  <div id="terms-of-service" class="privacy-dialog" role="dialog" aria-modal="true" aria-labelledby="terms-title">
+    <div class="privacy-dialog-inner">
+      <a class="privacy-close" href="#contact" aria-label="Close terms of service">&times;</a>
+      <h2 id="terms-title">Terms Of Service</h2>
+      <p>Terms of Service are coming soon.</p>
+      <p>For enquiries, contact <a href="mailto:noone@azmth.ai">noone@azmth.ai</a>.</p>
+    </div>
+  </div>
 
   <div id="privacy-policy" class="privacy-dialog" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
     <div class="privacy-dialog-inner">
