@@ -789,6 +789,16 @@ h1 {
   .privacy-policy-panel h3 { font-size: 18px; }
 }
 
+.team-portrait { overflow: hidden; }
+.team-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.team-portrait img[src*="ryan-aw.jpg"] { object-position: center 20%; transform: scale(1.35); transform-origin: 55% 60%; }
+.team-portrait img[src$="gleb-pivovarov.jpg"] { transform: scale(3); transform-origin: 50% 35%; }
+.team-portrait img[src*="tannesh-khumar.jpg"] { transform: scale(1.8); transform-origin: 42% 55%; }
+
+.team-portrait img[src*="marvin-das.jpg"] { transform: scale(2.7); transform-origin: 50% 4%; }
+.team-portrait img[src$="florian-pittini.jpg"] { transform: scale(2); transform-origin: 43% 0%; }
+.team-portrait img[src$="samuel-plesnik.jpg"] { transform: scale(1.25); transform-origin: 50% 80%; }
+
 .privacy-policy-panel ul { margin: 18px 0 0; padding-left: 24px; }
 .privacy-policy-panel li { margin-top: 12px; color: var(--muted); font-size: 16px; line-height: 1.55; }
 
