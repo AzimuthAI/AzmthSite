@@ -791,3 +791,5 @@ h1 {
 
 .privacy-policy-panel ul { margin: 18px 0 0; padding-left: 24px; }
 .privacy-policy-panel li { margin-top: 12px; color: var(--muted); font-size: 16px; line-height: 1.55; }
+
+.terms-policy-panel h4 { margin: 22px 0 0; font-family: "Andale Mono Local", "Courier New", monospace; font-size: 17px; font-weight: 400; line-height: 1.4; }
