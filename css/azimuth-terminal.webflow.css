@@ -788,3 +788,6 @@ h1 {
   .privacy-policy-panel { padding: 24px; }
   .privacy-policy-panel h3 { font-size: 18px; }
 }
+
+.privacy-policy-panel ul { margin: 18px 0 0; padding-left: 24px; }
+.privacy-policy-panel li { margin-top: 12px; color: var(--muted); font-size: 16px; line-height: 1.55; }
